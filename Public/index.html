@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Streamline Shipping | Export • Import • Logistics</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p>📦 Export • Import • CHA • Warehousing</p>
+      <div class="topbar__right">
+        <a href="tel:+919739751166">📞 +91 9739751166</a>
+        <a href="mailto:info@streamlineshipping.co.in">📧 info@streamlineshipping.co.in</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="/">
+  <span class="brand__mark">
+    <img src="Streamline.jpg" alt="Streamline Shipping Logo" class="brand__logo">
+  </span>
+  <span class="brand__text">
+    <b>Streamline Shipping</b>
+    <small>We Deliver For U</small>
+  </span>
+</a> 
+
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="nav__cta">Get Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__left">
+        <span class="chip">Trusted Logistics Partner</span>
+        <h1>Fast, Safe & Reliable <span class="grad">Shipping</span> Worldwide</h1>
+        <p>
+          Export & Import solutions with warehousing and Customs House Agent services.
+          We move your cargo with clear communication, smooth documentation and on-time delivery.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">Request a Quote</a>
+          <a class="btn btn--ghost" href="#services">Explore Services</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat"><b>24/7</b><span>Support</span></div>
+          <div class="stat"><b>Global</b><span>Network</span></div>
+          <div class="stat"><b>Secure</b><span>Handling</span></div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <h3>Quick Quote</h3>
+        <p>Send basic details — we will contact you.</p>
+
+        <form class="form" id="quoteForm">
+          <div class="row">
+            <input required type="text" placeholder="Your Name" id="q_name" />
+            <input required type="tel" placeholder="Phone Number" id="q_phone" />
+          </div>
+
+          <input required type="text" placeholder="Pickup City / Location" id="q_pickup" />
+          <input required type="text" placeholder="Destination City / Country" id="q_destination" />
+
+          <select required id="q_serviceType">
+            <option value="" disabled selected>Service Type</option>
+            <option>Sea Freight</option>
+            <option>Air Freight</option>
+            <option>Customs House Agent</option>
+            <option>Warehousing</option>
+            <option>EXIM Certificate</option>
+            <option>Inland Transport</option>
+          </select>
+
+          <button class="btn btn--primary btn--full" type="submit">Submit Quote Request</button>
+          <small class="hint">No spam. We’ll call you back quickly.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container grid2">
+      <div>
+        <h2>About Streamline Shipping</h2>
+        <p class="muted">
+          We help businesses and individuals move goods smoothly with export/import support,
+          documentation assistance, warehousing and last-mile courier delivery.
+        </p>
+
+        <div class="highlights">
+          <div class="hl">
+            <b>Transparent Updates</b>
+            <span>Track progress with clear communication.</span>
+          </div>
+          <div class="hl">
+            <b>Fast Documentation</b>
+            <span>Support for invoices, packing lists & customs.</span>
+          </div>
+          <div class="hl">
+            <b>Careful Handling</b>
+            <span>Secure packaging and professional logistics.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutCard">
+        <div class="aboutCard__top">
+          <div>
+            <h3>What we do</h3>
+            <p class="muted">End-to-end logistics support for your shipments.</p>
+          </div>
+          <div class="badge">ISO-ready</div>
+        </div>
+
+        <div class="list">
+          <div class="listItem">✅ Export & Import (Sea/Air)</div>
+          <div class="listItem">✅ Warehousing & Storage</div>
+          <div class="listItem">✅ Customs House Agent (CHA)</div>
+          <div class="listItem">✅ EXIM Certificate</div>
+        </div>
+
+        <a class="btn btn--ghost btn--full" href="#contact">Talk to Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section section--soft">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Services</h2>
+        <p class="muted">Choose the right option. We’ll handle planning, documents and delivery.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🚢</div>
+          <h3>Sea Freight</h3>
+          <p class="muted">Cost-effective shipping for large cargo with reliable scheduling.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">✈️</div>
+          <h3>Air Freight</h3>
+          <p class="muted">Fast movement for urgent shipments with careful handling.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🏬</div>
+          <h3>Warehousing</h3>
+          <p class="muted">Safe storage, inventory support and dispatch coordination.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📦</div>
+          <h3>Courier</h3>
+          <p class="muted">Parcel pickup and delivery with tracking support.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🧾</div>
+          <h3>EXIM Documentation</h3>
+          <p class="muted">Invoices, packing lists, customs support and compliance checks.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🚚</div>
+          <h3>Inland Transport</h3>
+          <p class="muted">Door-to-door pickup and delivery with route planning.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="section">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>How it works</h2>
+        <p class="muted">Simple steps. Smooth shipping.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="stepNo">01</span>
+          <h3>Share Details</h3>
+          <p class="muted">Pickup, destination, cargo type and timeline.</p>
+        </div>
+        <div class="step">
+          <span class="stepNo">02</span>
+          <h3>We Plan & Quote</h3>
+          <p class="muted">Best route, documents, and transparent pricing.</p>
+        </div>
+        <div class="step">
+          <span class="stepNo">03</span>
+          <h3>Pickup & Dispatch</h3>
+          <p class="muted">Safe packaging, secure handling and dispatch.</p>
+        </div>
+        <div class="step">
+          <span class="stepNo">04</span>
+          <h3>Delivery</h3>
+          <p class="muted">On-time delivery with consistent updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section section--soft">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Testimonials</h2>
+        <p class="muted">What clients say about us.</p>
+      </div>
+
+      <div class="quotes">
+        <figure class="quote">
+          <p>“Smooth export process and fast documentation. Great coordination.”</p>
+          <figcaption>— Business Client</figcaption>
+        </figure>
+        <figure class="quote">
+          <p>“Delivered on time. Very responsive support and clear updates.”</p>
+          <figcaption>— Courier Customer</figcaption>
+        </figure>
+        <figure class="quote">
+          <p>“Safe warehousing and easy dispatch. Professional service.”</p>
+          <figcaption>— Warehouse Client</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container grid2">
+      <div>
+        <h2>Contact</h2>
+        <p class="muted">Let’s move your shipment. Call or mail us anytime.</p>
+
+        <div class="contactBox">
+          <div class="contactItem">
+            <b>Phone</b>
+            <a href="tel:+919739751166">+91 9739751166</a>
+          </div>
+          <div class="contactItem">
+            <b>Email</b>
+            <a href="mailto:info@streamlineshipping.co.in">info@streamlineshipping.co.in</a>
+          </div>
+          <div class="contactItem">
+            <b>Business Hours</b>
+            <span>Mon–Sat • 9:00 AM – 7:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mapCard">
+        <h3>Send a message</h3>
+
+        <form class="form form--plain" id="contactForm">
+          <input required type="text" placeholder="Your Name" id="c_name" />
+          <input required type="email" placeholder="Your Email" id="c_email" />
+          <textarea required rows="4" placeholder="Your Message" id="c_message"></textarea>
+          <button class="btn btn--primary btn--full" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <b>Streamline Shipping</b>
+        <p class="muted">Export • Import • CHA • Warehousing</p>
+      </div>
+      <p class="muted">© 2026 Streamline Shipping. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a class="wa" href="https://wa.me/919739751166" target="_blank" rel="noreferrer" aria-label="WhatsApp">💬</a>
+
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const nav = document.getElementById("nav");
+    btn.addEventListener("click", () => nav.classList.toggle("nav--open"));
+  </script>
+
+  <script>
+    async function postJSON(url, data) {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      return res.json();
+    }
+
+    document.getElementById("quoteForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const payload = {
+        name: document.getElementById("q_name").value,
+        phone: document.getElementById("q_phone").value,
+        pickup: document.getElementById("q_pickup").value,
+        destination: document.getElementById("q_destination").value,
+        serviceType: document.getElementById("q_serviceType").value,
+      };
+      const out = await postJSON("/api/quote", payload);
+      alert(out.message || "Done");
+      if (out.ok) e.target.reset();
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const payload = {
+        name: document.getElementById("c_name").value,
+        email: document.getElementById("c_email").value,
+        message: document.getElementById("c_message").value,
+      };
+      const out = await postJSON("/api/contact", payload);
+      alert(out.message || "Done");
+      if (out.ok) e.target.reset();
+    });
+  </script>
+
+</body>
+</html>
